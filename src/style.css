@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #0f1020;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* FONDO PREMIUM */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(20, 37, 65, 0.18) 0%,
+      rgba(20, 37, 65, 0.08) 25%,
+      rgba(20, 37, 65, 0) 50%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(90, 110, 145, 0.12) 0%,
+      rgba(90, 110, 145, 0) 45%
+    ),
+    linear-gradient(
+      135deg,
+      #eef2f7 0%,
+      #f5f7fa 45%,
+      #ffffff 100%
+    );
+}
+
+/* TARJETA */
+
+.review-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(15, 16, 32, 0.18),
+    0 8px 20px rgba(15, 16, 32, 0.08);
+}
+
+/* CABECERA */
+
+.header {
+  background: #051b4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.logo {
+  display: block;
+  width: 180px;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* CONTENIDO */
+
+.content {
+  padding: 40px 22px 42px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  color: #071447;
+  font-size: 16.5px;
+  font-weight: 750;
+  letter-spacing: 0.7px;
+}
+
+h1 {
+  margin: 0;
+  color: #0f1020;
+  font-size: 25px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.description {
+  max-width: 360px;
+  margin: 18px auto 0;
+  color: #69717d;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ESTRELLAS */
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 34px;
+}
+
+.star {
+  border: none;
+  background: transparent;
+  padding: 3px;
+  color: #d8d8d8;
+  font-size: 46px;
+  line-height: 1;
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.star:hover {
+  color: #c9a24d;
+  transform: scale(1.12);
+}
+
+/* TEXTO DE VALORACIÓN */
+
+.rating-text {
+  margin: 20px 0 0;
+  color: #69717d;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+/* TABLET Y PC */
+
+@media (min-width: 768px) {
+
+  .page {
+    padding: 50px;
+  }
+
+  .review-card {
+    max-width: 560px;
+    border-radius: 18px;
+  }
+
+  .header {
+    padding: 36px;
+  }
+
+  .logo {
+    width: 210px;
+  }
+
+  .content {
+    padding: 52px 45px 48px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15.9px;
+  }
+
+  .stars {
+    gap: 8px;
+  }
+
+  .star {
+    font-size: 50px;
+  }
+
+  .rating-text {
+    font-size: 15px;
+  }
+}
